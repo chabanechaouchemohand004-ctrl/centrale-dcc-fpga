@@ -1,0 +1,38 @@
+# Vivado
+*.cache/
+*.hw/
+*.runs/
+*.sim/
+*.ip_user_files/
+*.gen/
+.Xil/
+*.jou
+*.log
+*.str
+*.wdb
+*.pb
+webtalk*
+vivado_pid*
+*.bit
+*.ltx
+
+# Vitis
+.metadata/
+RemoteSystemsTempFiles/
+*_bsp/
+*_system/
+Debug/
+Release/
+_ide/
+*.elf
+*.xsa
+
+# Simulation GHDL
+build/
+*.cf
+*.ghw
+*.vcd
+
+# Divers
+.DS_Store
+Thumbs.db
