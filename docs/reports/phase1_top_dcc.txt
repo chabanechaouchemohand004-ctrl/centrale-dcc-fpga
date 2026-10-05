@@ -1,0 +1,47 @@
+PHASE 1 - TOP_DCC (VHDL pur, Basys 3)
+Extrait des rapports Vivado 2020.2 des runs d'origine (version d'origine, pas la version actuelle du dépôt).
+Lignes conservées : en-tête (sans le nom de la machine), résumé de timing, horloge, utilisation. Le reste du rapport est omis ([...]).
+
+=== Rapport de timing (report_timing_summary) ===
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Apr  3 16:06:25 2026
+| Command      : report_timing_summary -max_paths 10 -file TOP_DCC_timing_summary_routed.rpt -pb TOP
+| Design       : TOP_DCC
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+[...]
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------
+      6.342        0.000                      0                  163        0.147        0.000                      0                  163        4.500        0.000                       0                    88
+
+
+All user specified timing constraints are met.
+[...]
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock        Waveform(ns)       Period(ns)      Frequency(MHz)
+-----        ------------       ----------      --------------
+sys_clk_pin  {0.000 5.000}      10.000          100.000
+
+=== Rapport d'utilisation (report_utilization) ===
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Apr  3 16:06:07 2026
+| Command      : report_utilization -file TOP_DCC_utilization_placed.rpt -pb TOP_DCC_utilization_pla
+| Design       : TOP_DCC
+| Device       : 7a35tcpg236-1
+| Design State : Fully Placed
+[...]
+| Slice LUTs              |  104 |     0 |     20800 |  0.50 |
+| Slice Registers         |  101 |     0 |     41600 |  0.24 |
+| Block RAM Tile |    0 |     0 |        50 |  0.00 |
+| DSPs      |    0 |     0 |        90 |  0.00 |
+| Bonded IOB                  |   11 |    11 |       106 | 10.38 |
